@@ -1,22 +1,4 @@
 
-document.body.addEventListener('htmx:configRequest', (event) => {
-    if (event.detail.path === '/api/generate') {
-      const generatePrompt = document.getElementById('generate-prompt');
-      if (generatePrompt.value.trim() === '') {
-        event.detail.parameters['prompt'] = 'Generate a random SCP story';
-      } else {
-        event.detail.parameters['prompt'] = generatePrompt.value.trim();
-      }
-    }
-    else if (event.detail.path === '/api/continue') {
-      const continuePrompt = document.getElementById('continue-prompt');
-      if (continuePrompt.value.trim() === '') {
-        event.detail.parameters['prompt'] = 'Continue the story';
-      } else {
-        event.detail.parameters['prompt'] = continuePrompt.value.trim();
-      }
-    }
-  });
 
   // Hamburger menu functionality
   const menuToggle = document.querySelector('.menu-toggle');
@@ -26,7 +8,7 @@ document.body.addEventListener('htmx:configRequest', (event) => {
     navMenu.classList.toggle('open');
     menuToggle.classList.toggle('open');
   });
-// hero link
+// shop now btn link
 document.querySelector('.btn-shop').addEventListener('click', () => {
     window.location.href = "#";
 });
@@ -56,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-//   Particles
+// crating  Particles
 
   function createParticle(x, y) {
     const particle = document.createElement('div');
