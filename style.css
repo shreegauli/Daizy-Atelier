@@ -124,6 +124,47 @@ body {
     /* hero page!! */
 
   }
+
+  .fe-box{
+  position: relative;
+
+}
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+  .fe-box::after, .fe-box::before{
+    content: ''; 
+    position: absolute;
+    height: 101%;
+    width: 101%;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle),transparent 5%, rgb(80, 12, 237), #FF8343, red,green);
+    top: 50%;
+    left: 50%;
+   translate: -50% -50%;
+   z-index: -1;
+  animation: 2s spin linear infinite;
+   
+ }
+ .fe-box::before{
+   filter: blur(1rem);  
+   opacity: 0.5;
+ }
+
+
+@keyframes spin{
+    from{
+--angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
   .hero {
     height: 100vh;
     background-size: cover;
@@ -146,6 +187,7 @@ body {
     margin: 10px 0;
     animation: slideIn 2.5s ease-in-out;
 }
+
 
 
 button:hover {
