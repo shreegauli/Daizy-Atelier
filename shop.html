@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Daizy Atelier</title>
+  
+</head>
+<body class="w-[100%] scroll-smooth">
+
+<header class="header fixed top-0 left-0 right-0 z-10">
+    <div class="logo text-[2rem] font-extrabold relative cursor-pointer [@media(max-width:768px)]:text-[1.5rem] [@media(max-width:768px)]:text-white">Daizy Atelier</div>
+    <button class="menu-toggle"   >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="shop.html" class="nav-item active">Shop</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+      <i class="fa-solid fa-cart-arrow-down text-[1.5rem] text-[#fff] hover:text-[#ff8343]" id="cart"></i>
+    </nav>
+  </header>
+
+<div class="hero bg-[url(/image/banner-101.png)] bg-[#F1DEC6] h-[40vh] w-full [@media(max-width:768px)]:h-[10vh] [@media(max-width:768px)]:text-center  [@media(max-width:768px)]:leading-[45px] [@media(max-width:768px)]:bg-[top_45%_right_0%] bg-[top_48%_right_80%] bg-cover [@media(max-width:768px)]:text-white text-white leading-[5rem]">
+    <!-- <h1>Sales-in-offer</h1>
+    <p>Super value deals</p>
+    <p>On all products</p>
+    <p>Save more with coupons & up to 70% off!</p>
+    <button class="btn-shop  w-60 h-[5rem] text-[#088178] cursor-pointer text-[1.5em] [transition:all_0.3s_ease] uppercase tracking-[2px] relative overflow-hidden font-semibold hover:text-[#921a40] hover:bg-transparent [@media(max-width:768px)]:hover:rounded-[9px] rounded-[1px] border-[1px] hover:border-[#e0e855] [@media(max-width:768px)]:h-[4rem] [@media(max-width:768px)]:w-[9rem]  hover:border-[1.5px]">Shop Now</button> -->
+</div>
+
+
+
+
+<section class="product-feature text-center [@media(max-width:768px)]:mt-[2rem]">
+<h2 class="text-[2.875rem] leading-[3.375rem] text-[#222]">Featured Products</h2>
+<p class="ml-[0] mr-[0] my-[15px]">Summer Collection New Morden Design</p>
+<div id="product-cointainer" class="product-cointainer flex justify-between pt-5 flex-wrap">
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-1.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Red jacket for kids</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 8,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-2.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Yellow jacket & pant</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 10,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-3.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">White T-shit & pant</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 7,999</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-4.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Long One-pice</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 12,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-5.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Coat & pant set</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 25,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-6.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Pink jacket & pant</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 13,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-7.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Sky blue short one-pice</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 17,000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+
+<div id="product" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+    <img src="/image/product-8.jpg" alt="" class="w-[100%] rounded-[20px]">
+    <div class="pro-deal text-start py-[0.625rem] px-0">
+        <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+        <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Yellow coad & pant set</h5>
+        <div class="star">
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+            <span style="font: size 25px;color:yellow;">&starf;</span>
+        </div>
+        <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 8000</h4>
+    </div>
+    <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="product-newarrival text-center">
+    <h2 class="text-[2.875rem] leading-[3.375rem] text-[#222]">New Arrival</h2>
+    <p class="ml-[0] mr-[0] my-[15px]">Summer Collection New Morden Design</p>
+    <div id="product-cointainer" class="product-cointainer flex justify-between pt-5 flex-wrap">
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/new-arrival-1.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Red jacket for kids</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 8,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/new-arrival-2.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Yellow jacket & pant</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 10,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/banner-3.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">White T-shit & pant</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 7,999</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/banner-4.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Long One-pice</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 12,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/banner-5.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Coat & pant set</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 25,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/new-arrival-3.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Pink jacket & pant</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 13,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/new-arrival-4.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Sky blue short one-pice</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 17,000</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    
+    <div id="product-new" class="product relative w-[23%] min-w-[15.625rem] py-[10px] px-3 border-[#cce7d0] border-[1px] border-solid rounded-[25px] cursor-pointer [box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.02)] my-[0.9375rem] mx-0 transition-[.2s] ease-in hover:[box-shadow:20px_20px_30px_rgba(0,_0,_0,_0.06)]">
+        <img src="/image/new-arrival-5.jpg" alt="" class="w-[100%] rounded-[20px]">
+        <div class="pro-deal text-start py-[0.625rem] px-0">
+            <p class="text-[#606063] text-[0.75rem]">American Eagle</p>
+            <h5 class="pt-[0.4375rem] text-[#1a1a1a] text-[0.875rem]">Yellow coad & pant set</h5>
+            <div class="star">
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+                <span style="font: size 25px;color:yellow;">&starf;</span>
+            </div>
+            <h4 class="price pt-[7px] font-semibold text-[15px] text-[#088178]">NPR 8000</h4>
+        </div>
+        <a href="#" class=""><i class="fa-solid fa-cart-plus text-green-500 text-[1.8rem] absolute bottom-4 right-4 leading-[50px] border-[1px] rounded-full h-[50px] w-[50px] border-[#cce7d0]"></i></a>
+    </div>
+    </div>
+    </section>
+
+    <!-- Newsletter -->
+<nav class="newsletter flex justify-between flex-wrap items-center bg-[#40C0C4] [@media(max-width:768px)]:py-2 [@media(max-width:768px)]:px-1 py-10 px-[3.75rem]">
+    <div class="newstext">
+        <h4 class="text-[1.5rem] font-bold text-white">Sign Up For Newsletter</h4>
+<p class="text-[0.875rem] font-semibold">Get E-mail updates about our latest shop and <span class="text-[#ffbd27]">special offers.</span></p>
+    </div>
+    <div id="form" class="form flex w-[40%]">
+        <input type="text" placeholder="Your email adress" class="input-box w-full border-[1px]  border-[transparent] rounded-[4px] outline-[none] px-[1.25em] py-[0] text-[14px] h-[3.125rem] rounded-tr-none rounded-br-none  ">
+        <button class="normal-btn relative text-[15px] py-[0.6875rem] text-[#fff] hover:text-[#4158A6] bg-[#088178] whitespace-nowrap h-[3.125rem] rounded-[4px]  w-[150px] border-[1px] border-[solid] border-[#088178] outline-[none] [transition:0.2s] font-bold px-[1.125rem] rounded-tl-none rounded-bl-none ">Sign Up</button>
+    </div>
+</nav>
+<footer class="myfooter flex flex-wrap justify-between px-5 py-10">
+    <div class="column-1 flex flex-col items-start mb-5 w-[25%]">
+        <a href="index.html" id="logo" class="logo  text-[2rem] pb-[1.5rem] cursor-pointer">Daizy Atelier</a>
+        <h4 class="text-[14px] pb-5">Contact</h4>
+        <p class="adress text-[0.8125rem] mt-0 mr-0 mb-2 ml-0"><strong>Address:</strong>Boudha,<br>Kathmandu,Nepal.</p>
+        <p class="text-[0.8125rem] mt-0 mr-0 mb-2 ml-0"><strong>Phone:</strong> +977-9808259495</p>
+        <p class="text-[0.8125rem] mt-0 mr-0 mb-2 ml-0"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat.</p>
+        <div class="follow text-[14px] pb-5 mt-5">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-square-facebook text-[#465b52] cursor-pointer pr-1 hover:text-[#088178]"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok text-[#465b52] cursor-pointer pr-1 hover:text-[#088178]"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram text-[#465b52] cursor-pointer pr-1 hover:text-[#088178]"></i></a>
+                <a href=""><i class="fa-brands fa-youtube text-[#465b52] cursor-pointer pr-1 hover:text-[#088178]"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="column-2 flex flex-col items-start mb-5 w-[25%]">
+        <h4 class="text-[14px] pb-5">About</h4>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">About Us</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Delivery Information</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Privancy Policy</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Terms & Conditions</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Contact Us</a>
+    </div>
+    <div class="column-3 flex flex-col items-start mb-5 w-[25%]">
+        <h4 class="text-[14px] pb-5">My Account</h4>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Sign In</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">View Cart</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">My Wishlist</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Track My Order</a>
+        <a href="#" class="text-[0.8125rem] text-[#222] mb-[0.625rem] hover:text-[#088178]">Help</a>
+    </div>
+    <div class="app-payment flex justify-between">
+        <div class="column-4 flex flex-col items-start">
+            <h4 class="text-[14px] pb-5">Install App</h4>
+         <p class="text-[0.8125rem] mt-0 mr-0 mb-2 ml-0">From App Store or Google Play : Coming Soon</p>
+         <div id="dowanloadapp" class="column-6 row flex flex-wrap gap-4 ">
+            <i class="fa-brands fa-google-play text-[4rem] text-green-400"></i>
+            <i class="fa-brands fa-app-store-ios text-[4rem] text-blue-500"></i>
+         </div>
+         <p class="column-5 text-[0.8125rem] mt-0 mr-0 mb-2 ml-0">Secured Payment Gateways</p>
+         <div id="Payment" class="column-7 flex flex-wrap gap-4">
+            <i class="fa-brands fa-cc-visa text-[4rem] text-[#0E146C]"></i>
+            <i class="fa-brands fa-cc-mastercard text-[4rem]  text-[#F79E1B]"></i>
+        </div>
+        </div>
+    </div>
+    <div class="copyright w-[100%] text-center">
+        <p class="text-[0.8125rem] mt-0 mr-0 mb-2 ml-0">2022 Daizy Atelier. All rights reverved</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
